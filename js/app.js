@@ -62,9 +62,9 @@ const heroes = [
 ];
 
 const renderHero = (hero) => {
-  let { heroClass, heroLore } = hero;
+  let { heroClass, heroName, heroLore } = hero;
   heroClass = heroClass.toLowerCase().split(' ').join('');
-  return `<h2 class="hero-name">${heroClass.toUpperCase()}</h2>
+  return `<h2 class="hero-name">${heroName}</h2>
     <div class="hero-portrait">
         <img class="hero-portrait_img" src="./img/${heroClass}.webp" alt="heroportrait" />
     </div>
