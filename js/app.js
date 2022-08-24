@@ -68,7 +68,7 @@ const renderHero = (hero) => {
 const content = document.querySelector('.content');
 
 document.addEventListener('DOMContentLoaded', () => {
-  const randomNumber = Math.floor(Math.random() * 9);
+  const randomNumber = Math.floor(Math.random() * heroes.length);
   content.innerHTML = renderHero(heroes[randomNumber]);
 });
 
